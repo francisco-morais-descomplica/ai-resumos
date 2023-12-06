@@ -12,8 +12,7 @@ será usado para criar um novo conteúdo.
 """
 
 Crie um material de apoio com base na aula "{{title}}" apresentada. O material, em formato de artigo, deve ensinar as 
-informações mais relevantes para responder os exercícios da aula, usando uma linguagem acadêmica. Use Markdown para
-formatações do texto.
+informações mais relevantes para responder os exercícios da aula, usando uma linguagem acadêmica.
 
 SEMPRE siga estas instruções:
 <instruções>
@@ -21,6 +20,7 @@ SEMPRE siga estas instruções:
 - Use até 5 parágrafos
 - Use uma linguagem explicativa e sucinta
 - Ignore referências bibliográficas
+- Use a sintaxe Katex para expressões e fórmulas matemáticas, quando houver
 </instruções>
 
 Vamos começar:
