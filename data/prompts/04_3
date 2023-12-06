@@ -1,0 +1,13 @@
+Re-organize o texto a seguir em format Markdown, enfatizando termos relevantes (ex: **termo**), criando tópicos (##), sub-tópicos (###), bullet points e incorporando sintaxe matemática usando Katex quando necessário. O texto criado deve ser bem estruturado e visualmente apelativo, em representação Markdown.
+
+Mantenha o uso de Katex para sintaxe matemática, (exemplo $\int_{-\infty}^\infty\f\hat\xi\,e^{2 \pi i \xi x}\,d\xi$)
+
+"""
+<artigo>
+{{rawMaterial}}
+</artigo>
+"""
+
+Vamos começar:
+
+# {{title}}

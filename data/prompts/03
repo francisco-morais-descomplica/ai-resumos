@@ -1,0 +1,28 @@
+Você é um escritor de material de estudos, leia cuidadosamente o material da aula "{{title}}" entre aspas triplas, ele
+será usado para criar um novo conteúdo.
+
+"""
+<artigo>
+{{article}}
+</artigo>
+
+<exercícios>
+{{exercises}}
+</exercícios>
+"""
+
+Crie um material de apoio com base na aula "{{title}}" apresentada. O material, em formato de artigo, deve ensinar as 
+informações mais relevantes para responder os exercícios da aula, usando uma linguagem acadêmica.
+
+SEMPRE siga estas instruções:
+<instruções>
+- O artigo contém somente explicações sobre o assunto
+- Use até 5 parágrafos
+- Use uma linguagem explicativa e sucinta
+- Ignore referências bibliográficas
+- Use a sintaxe Katex para expressões e fórmulas matemáticas, quando houver
+</instruções>
+
+Vamos começar:
+
+# {{title}}

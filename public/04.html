@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summaries Eval</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <a class="nav-link" href="01.html">01</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="02.html">02</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="04.html">04</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="fluid-container">
+    <div class="p-2 mb-2 bg-light">
+      <div class="container-fluid py-5">
+        <h6 class="display-6">4 - Cadeia</h6>
+        <p class="col-md-8 fs-5">Nesse prompt estamos usando uma cadeia de 3 prompts:
+(1) cria mapa mental e seleciona os tópicos mais importantes para responder exercícios
+(2) cria um novo artigo focando nos tópicos importantes
+(3) Reestrutura o artigo e estiliza com Markdown e Katex</p>
+        <details>
+          <summary>Prompt</summary>
+
+          <pre>=== PROMPT 1 ===
+
+Leia cuidadosamente o material a seguir da aula &#34;{{title}}&#34;.
+
+&#34;&#34;&#34;
+&lt;artigo&gt;
+{{article}}
+&lt;/artigo&gt;
+
+&lt;exercícios&gt;
+{{exercises}}
+&lt;/exercícios&gt;
+&#34;&#34;&#34;
+
+Extraia em um mapa mental os principais tópicos e assuntos do conteúdo da aula &#34;{{title}}&#34;. Em seguida, selecione os tópicos da aula que são mais importantes para responder aos exercícios.
+
+O retorno esperado é:
+
+&#34;&#34;&#34;
+Tópicos:
+- topico-1
+  - sub-topico-1
+  - ...
+- ...
+
+Tópicos relevantes para exercícios:
+- topico-1
+  - sub-topico-1
+  - ...
+- ...
+&#34;&#34;&#34;
+
+=== PROMPT 2 ===
+
+Você é um escritor de material de estudos, leia cuidadosamente o material da aula &#34;{{title}}&#34; entre aspas triplas, ele 
+será usado para criar um material de apoio resumido.
+
+&#34;&#34;&#34;
+&lt;artigo&gt;
+{{article}}
+&lt;/artigo&gt;
+&#34;&#34;&#34;
+
+Crie um material de apoio com base na aula &#34;{{title}}&#34; apresentada. O material, em formato de artigo, deve ensinar o conteúdo de forma dinâmica e educativa, usando uma linguagem acadêmica.
+
+Dê maior atenção aos seguintes tópicos do conteúdo:
+
+&lt;tópicos-importantes&gt;
+{{relevantTopics}}
+&lt;/tópicos-importantes&gt;
+
+SEMPRE siga estas instruções:
+&lt;instruções&gt;
+- O artigo contém somente explicações sobre o assunto
+- Use até 5 parágrafos
+- Use uma linguagem explicativa e sucinta
+- Ignore referências bibliográficas
+&lt;/instruções&gt;
+
+=== PROMPT 3 ===
+
+Re-organize o texto a seguir em format Markdown, enfatizando termos relevantes (ex: **termo**), criando tópicos (##), sub-tópicos (###), bullet points e incorporando sintaxe matemática usando Katex quando necessário. O texto criado deve ser bem estruturado e visualmente apelativo, em representação Markdown.
+
+Um exemplo de fómula em Katex é \f\relax{x} = \int_{-\infty}^\infty
+    \f\hat\xi\,e^{2 \pi i \xi x}
+    \,d\xi
+
+&#34;&#34;&#34;
+&lt;artigo&gt;
+{{rawMaterial}}
+&lt;/artigo&gt;
+&#34;&#34;&#34;
+
+Vamos começar:
+
+# {{title}}</pre>
+        </details>
+      </div>
+    </div>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="O-Novo-Acordo-Ortografico-tab" data-bs-toggle="tab" data-bs-target="#O-Novo-Acordo-Ortografico" type="button" role="tab" aria-controls="O-Novo-Acordo-Ortografico" aria-selected="true">O-Novo-Acordo-Ortografico</button>
+        </li>
+      
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Tempos-de-grandes-mudancas-tab" data-bs-toggle="tab" data-bs-target="#Tempos-de-grandes-mudancas" type="button" role="tab" aria-controls="Tempos-de-grandes-mudancas" aria-selected="true">Tempos-de-grandes-mudancas</button>
+        </li>
+      
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Teorema-Fundamental-do-Calculo-copy-tab" data-bs-toggle="tab" data-bs-target="#Teorema-Fundamental-do-Calculo-copy" type="button" role="tab" aria-controls="Teorema-Fundamental-do-Calculo-copy" aria-selected="true">Teorema-Fundamental-do-Calculo-copy</button>
+        </li>
+      
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Teorema-Fundamental-do-Calculo-tab" data-bs-toggle="tab" data-bs-target="#Teorema-Fundamental-do-Calculo" type="button" role="tab" aria-controls="Teorema-Fundamental-do-Calculo" aria-selected="true">Teorema-Fundamental-do-Calculo</button>
+        </li>
+      
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="exemplo-1-tab" data-bs-toggle="tab" data-bs-target="#exemplo-1" type="button" role="tab" aria-controls="exemplo-1" aria-selected="true">exemplo-1</button>
+        </li>
+      
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="exemplo-2-tab" data-bs-toggle="tab" data-bs-target="#exemplo-2" type="button" role="tab" aria-controls="exemplo-2" aria-selected="true">exemplo-2</button>
+        </li>
+      
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      
+        <div class="tab-pane fade show" id="O-Novo-Acordo-Ortografico" role="tabpanel" aria-labelledby="O-Novo-Acordo-Ortografico-tab">
+          <div class="container my-5">
+            <h2>O Novo Acordo Ortográfico</h2>
+<p>O Novo Acordo Ortográfico, aprovado pelos países falantes da Língua Portuguesa, tem como objetivo principal dar mais visibilidade ao idioma no cenário internacional e facilitar o intercâmbio cultural entre os países que falam português. É importante ressaltar que o acordo se restringe à língua escrita, não afetando a língua falada.</p>
+<h2>Principais mudanças do acordo</h2>
+<p>Uma das principais mudanças do acordo é a incorporação das letras <strong>k, w e y</strong> ao alfabeto, que passa a ter 26 letras. Essas letras são usadas em casos especiais, como nomes de pessoas e lugares de origem estrangeira, siglas e palavras adotadas como unidades de medida.</p>
+<p>Outra mudança importante é a não acentuação dos ditongos abertos tônicos <strong>éi</strong> e <strong>ói</strong> nas palavras paroxítonas. No entanto, essa regra não se aplica às palavras oxítonas terminadas em <strong>éis, éu, éus, ói</strong> e <strong>óis</strong>, que continuam a ser acentuadas.</p>
+<p>Além disso, o acordo prevê a não acentuação das palavras paroxítonas com <strong>i</strong> e <strong>u</strong> tônicos quando precedidos de ditongo. No entanto, se a palavra for oxítona e o <strong>i</strong> ou <strong>u</strong> estiverem em posição final ou seguidos de <strong>s</strong>, o acento permanece.</p>
+<p>Outras mudanças incluem a não acentuação dos hiatos com <strong>eem</strong>, a perda do acento circunflexo em hiato de <strong>oo(s)</strong>, a manutenção dos acentos que diferenciam o singular do plural dos verbos <strong>ter</strong> e <strong>vir</strong>, a supressão do trema, a divisão silábica e a hifenização na colocação pronominal.</p>
+<p>Essas são apenas algumas das principais mudanças do Novo Acordo Ortográfico. É importante estudar e praticar as novas regras para se adaptar à nova ortografia da língua portuguesa.</p>
+
+          </div>
+        </div>
+      
+        <div class="tab-pane fade show" id="Tempos-de-grandes-mudancas" role="tabpanel" aria-labelledby="Tempos-de-grandes-mudancas-tab">
+          <div class="container my-5">
+            <p>A história é marcada por transformações que impactam profundamente a sociedade. Em tempos de grandes mudanças, tudo se transforma rapidamente e as pessoas mal conseguem imaginar como era a vida de seus antepassados. A tecnologia e as comunicações são os principais gatilhos dessa transformação, criando descontinuidades e definindo novos paradigmas. A sociedade do conhecimento surge como resultado dessas mudanças, onde a inovação, a informação e o conhecimento são tão ou mais importantes que o capital financeiro.</p>
+<h2>Impacto nas organizações</h2>
+<p>Essas mudanças não se limitam apenas à sociedade, mas também afetam as organizações. A tecnologia da informação e da comunicação revoluciona a forma de fazer negócios e liderar pessoas. Nesse novo cenário, o <strong>trabalhador do conhecimento</strong> se torna dono dos meios de produção e do produto do seu trabalho, tendo autonomia para estabelecer suas próprias prioridades e horários.</p>
+<h2>Novas alternativas e produtos de mercado</h2>
+<p>Os avanços tecnológicos permitem a criação de novas alternativas, que se tornam novos produtos de mercado e mudam o mundo tanto economicamente quanto socialmente. Um exemplo disso é a entrada das mulheres no mercado de trabalho, impulsionada pela pílula anticoncepcional nos anos 1960. Essa mudança criou a necessidade de novos produtos e serviços, como lanchonetes fast food e comidas congeladas, para atender às demandas da nova estrutura familiar.</p>
+<h2>Desafios para os novos profissionais e líderes</h2>
+<p>Diante dessas transformações, os novos profissionais e líderes enfrentam desafios para criar o novo e mobilizar as pessoas para implantar as mudanças. Para ter sucesso nesse cenário, é fundamental que esses profissionais se conheçam muito bem e também saibam como agir e reagir diante dos outros. O <strong>autoconhecimento</strong> e o desenvolvimento de <strong>habilidades e competências</strong> são essenciais para se adaptar e prosperar nesse ambiente de mudanças contínuas.</p>
+<h2>Conclusão</h2>
+<p>Em resumo, vivemos em tempos de grandes mudanças impulsionadas pela tecnologia e comunicações. Essas mudanças afetam tanto a sociedade quanto as organizações, criando novos paradigmas e exigindo novas formas de trabalho e liderança. Os profissionais que se adaptarem e desenvolverem habilidades necessárias para o sucesso nesse novo cenário serão os mais bem-sucedidos. O <strong>autoconhecimento</strong> e a capacidade de se relacionar com os outros são fundamentais nesse processo de adaptação e crescimento profissional.</p>
+
+          </div>
+        </div>
+      
+        <div class="tab-pane fade show" id="Teorema-Fundamental-do-Calculo-copy" role="tabpanel" aria-labelledby="Teorema-Fundamental-do-Calculo-copy-tab">
+          <div class="container my-5">
+            <p>O Teorema Fundamental do Cálculo é um importante conceito no estudo da matemática, especialmente no cálculo integral. Ele estabelece uma relação entre a função original e sua antiderivada, permitindo calcular integrais definidas de forma mais simples.</p>
+<h2>Integral Definida</h2>
+<p>Uma <strong>integral definida</strong> é uma medida da área sob uma curva em um intervalo específico. O Teorema Fundamental do Cálculo nos diz que, se uma função <strong>f</strong> é contínua em um intervalo <strong>[a, b]</strong>, então a integral definida dessa função pode ser calculada encontrando uma antiderivada <strong>F</strong> e subtraindo os valores da função nos limites do intervalo, ou seja, <strong>F(b) - F(a)</strong>.</p>
+<h2>Técnicas de Integração</h2>
+<p>Existem várias <strong>técnicas de integração</strong> que podem ser aplicadas para encontrar a antiderivada <strong>F</strong>. Algumas dessas técnicas incluem:</p>
+<ul>
+<li>A <strong>regra da substituição</strong></li>
+<li>A <strong>integral por partes</strong></li>
+<li>As <strong>integrais diretas</strong> de funções trigonométricas e exponenciais</li>
+</ul>
+<p>Essas técnicas são úteis para simplificar o cálculo de integrais definidas e encontrar soluções mais rapidamente.</p>
+<h2>Exemplos</h2>
+<p>Vamos considerar alguns <strong>exemplos</strong> para ilustrar o uso do Teorema Fundamental do Cálculo e das técnicas de integração. Por exemplo, se quisermos calcular a integral definida de <strong>f(x) = x</strong> no intervalo <strong>[2, 4]</strong>, podemos encontrar a antiderivada <strong>F(x) = x^2/2</strong> e aplicar o Teorema Fundamental do Cálculo para obter <strong>F(4) - F(2) = 16/2 - 4/2 = 6</strong>.</p>
+<h2>Considerações Finais</h2>
+<p>É importante ressaltar que o intervalo em que a função é contínua é fundamental para aplicar o Teorema Fundamental do Cálculo. Se houver pontos de descontinuidade no intervalo, a integral definida não poderá ser calculada usando esse teorema.</p>
+<p>Em resumo, o Teorema Fundamental do Cálculo é uma ferramenta poderosa para calcular integrais definidas. Ele estabelece uma relação entre a função original e sua antiderivada, permitindo simplificar o cálculo da integral definida. Além disso, existem várias técnicas de integração que podem ser aplicadas para encontrar a antiderivada e facilitar o cálculo. É importante lembrar que o intervalo em que a função é contínua é essencial para aplicar o teorema corretamente.</p>
+
+          </div>
+        </div>
+      
+        <div class="tab-pane fade show" id="Teorema-Fundamental-do-Calculo" role="tabpanel" aria-labelledby="Teorema-Fundamental-do-Calculo-tab">
+          <div class="container my-5">
+            <p>O <strong>Teorema Fundamental do Cálculo</strong> é um resultado fundamental no estudo da integração. Ele estabelece uma relação entre a função original e sua antiderivada, permitindo calcular integrais definidas de forma mais simples.</p>
+<p>De acordo com o teorema, se uma função <strong>f</strong> é contínua em um intervalo fechado <strong>[a, b]</strong>, então a função definida por <strong>F(x) = <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>x</mi></msubsup><mi>f</mi><mo>(</mo><mi>t</mi><mo>)</mo><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\int_a^x f(t)dt</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.805em;"></span><span class="strut bottom" style="height:1.16112em;vertical-align:-0.35612em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0005599999999999772em;">∫</span><span class="vlist"><span style="top:0.35612em;margin-left:-0.19445em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">a</span></span></span><span style="top:-0.41900000000000004em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">x</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">t</span><span class="mclose">)</span><span class="mord mathit">d</span><span class="mord mathit">t</span></span></span></span></strong> é contínua em <strong>[a, b]</strong> e diferenciável em <strong>(a, b)</strong>, sendo <strong>F</strong> uma antiderivada de <strong>f</strong>, ou seja, <strong>F'(x) = f(x)</strong>. Isso significa que a integral definida de <strong>f(x)</strong> em <strong>[a, b]</strong> pode ser calculada como a diferença entre os valores de <strong>F(x)</strong> nos pontos <strong>a</strong> e <strong>b</strong>, ou seja, <strong><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mi>F</mi><mo>(</mo><mi>b</mi><mo>)</mo><mo>−</mo><mi>F</mi><mo>(</mo><mi>a</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\int_a^b f(x)dx = F(b) - F(a)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.905108em;"></span><span class="strut bottom" style="height:1.261228em;vertical-align:-0.35612em;"></span><span class="base textstyle uncramped"><span class="mop"><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0005599999999999772em;">∫</span><span class="vlist"><span style="top:0.35612em;margin-left:-0.19445em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">a</span></span></span><span style="top:-0.41900000000000004em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">b</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mord mathit">d</span><span class="mord mathit">x</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathit">b</span><span class="mclose">)</span><span class="mbin">−</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathit">a</span><span class="mclose">)</span></span></span></span></strong>.</p>
+<p>É importante ressaltar que o intervalo <strong>[a, b]</strong> no qual a integral definida é calculada deve ser contínuo, ou seja, não pode conter pontos de descontinuidade da função <strong>f</strong>. Caso contrário, a integral definida não estará bem definida.</p>
+<h1>Técnicas de Integração</h1>
+<p>Para aplicar o Teorema Fundamental do Cálculo, podemos utilizar diversas técnicas de integração, como:</p>
+<h2>1. Regra da Substituição</h2>
+<p>A regra da substituição é uma técnica utilizada para simplificar a integração de funções complexas. Ela consiste em substituir uma variável por uma nova variável, de forma que a integral se torne mais fácil de calcular.</p>
+<h2>2. Integral por Partes</h2>
+<p>A integral por partes é uma técnica utilizada para integrar o produto de duas funções. Ela é baseada na fórmula <strong><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∫</mo><mi>u</mi><mi>d</mi><mi>v</mi><mo>=</mo><mi>u</mi><mi>v</mi><mo>−</mo><mo>∫</mo><mi>v</mi><mi>d</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">\int u dv = uv - \int v du</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.805em;"></span><span class="strut bottom" style="height:1.11112em;vertical-align:-0.30612em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0005599999999999772em;">∫</span><span class="mord mathit">u</span><span class="mord mathit">d</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mrel">=</span><span class="mord mathit">u</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mbin">−</span><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0005599999999999772em;">∫</span><span class="mord mathit" style="margin-right:0.03588em;">v</span><span class="mord mathit">d</span><span class="mord mathit">u</span></span></span></span></strong>, onde <strong>u</strong> e <strong>v</strong> são funções diferenciáveis.</p>
+<h2>3. Integrais Diretas de Funções Trigonométricas e Exponenciais</h2>
+<p>Existem fórmulas específicas para calcular integrais de funções trigonométricas e exponenciais, como:</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∫</mo><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mo>−</mo><mi>cos</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\int \sin(x)dx = -\cos(x) + C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.805em;"></span><span class="strut bottom" style="height:1.11112em;vertical-align:-0.30612em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0005599999999999772em;">∫</span><span class="mop">sin</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mord mathit">d</span><span class="mord mathit">x</span><span class="mrel">=</span><span class="mord">−</span><span class="mop">cos</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.07153em;">C</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∫</mo><mi>cos</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\int \cos(x)dx = \sin(x) + C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.805em;"></span><span class="strut bottom" style="height:1.11112em;vertical-align:-0.30612em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0005599999999999772em;">∫</span><span class="mop">cos</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mord mathit">d</span><span class="mord mathit">x</span><span class="mrel">=</span><span class="mop">sin</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.07153em;">C</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>∫</mo><msup><mi>e</mi><mi>x</mi></msup><mi>d</mi><mi>x</mi><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\int e^x dx = e^x + C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.805em;"></span><span class="strut bottom" style="height:1.11112em;vertical-align:-0.30612em;"></span><span class="base textstyle uncramped"><span class="op-symbol small-op mop" style="margin-right:0.19445em;top:-0.0005599999999999772em;">∫</span><span class="mord"><span class="mord mathit">e</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">x</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathit">d</span><span class="mord mathit">x</span><span class="mrel">=</span><span class="mord"><span class="mord mathit">e</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">x</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.07153em;">C</span></span></span></span></li>
+</ul>
+<p>Essas técnicas permitem simplificar o cálculo da integral definida e encontrar sua antiderivada.</p>
+<h1>Recomendação de Vídeo</h1>
+<p>Para fixar o conteúdo do Teorema Fundamental do Cálculo, é recomendado assistir ao vídeo &quot;A Integral e o Teorema Fundamental do Cálculo, por que funciona?!&quot; do canal Professor Julio Lombaldo, disponível no YouTube. Esse vídeo apresenta uma explicação visual e dinâmica do teorema, facilitando a compreensão do seu funcionamento.</p>
+<h1>Conclusão</h1>
+<p>Em resumo, o Teorema Fundamental do Cálculo é uma ferramenta poderosa no cálculo de integrais definidas. Ele estabelece uma relação entre a função original e sua antiderivada, permitindo calcular integrais de forma mais simples. É importante lembrar que o intervalo no qual a integral é calculada deve ser contínuo, e podemos utilizar diversas técnicas de integração para simplificar o cálculo.</p>
+
+          </div>
+        </div>
+      
+        <div class="tab-pane fade show" id="exemplo-1" role="tabpanel" aria-labelledby="exemplo-1-tab">
+          <div class="container my-5">
+            <h2>Introdução</h2>
+<p>Nos tempos atuais, estamos vivenciando grandes mudanças em diversos aspectos da nossa vida. Seja na tecnologia, na economia, na política ou na sociedade como um todo, é inegável que estamos passando por transformações significativas.</p>
+<h2>Tecnologia</h2>
+<p>A tecnologia tem sido uma das principais impulsionadoras dessas mudanças. Com o avanço da internet, dos dispositivos móveis e das redes sociais, o mundo se tornou mais conectado do que nunca. Isso trouxe uma série de benefícios, como a facilidade de comunicação e acesso à informação, mas também desafios, como a privacidade e a segurança dos dados.</p>
+<h2>Economia</h2>
+<p>A economia também está passando por transformações profundas. Novos modelos de negócios surgem a todo momento, impulsionados pela tecnologia e pela inovação. Além disso, a globalização e a internacionalização das empresas têm impactado diretamente a forma como produzimos, consumimos e nos relacionamos com o mercado.</p>
+<h2>Política</h2>
+<p>Na política, vemos movimentos populistas ganhando força em diversos países. Esses movimentos têm como característica a valorização de líderes carismáticos e a busca por soluções simplistas para problemas complexos. Além disso, a polarização política tem se intensificado, gerando divisões e conflitos.</p>
+<h2>Sociedade</h2>
+<p>Por fim, a sociedade como um todo está passando por mudanças significativas. Questões como igualdade de gênero, diversidade e inclusão estão cada vez mais presentes nas discussões. Além disso, a busca por um estilo de vida mais sustentável e consciente tem ganhado espaço.</p>
+<h2>Conclusão</h2>
+<p>Em resumo, vivemos em tempos de grandes mudanças. A tecnologia, a economia, a política e a sociedade estão passando por transformações profundas. É importante estarmos atentos a essas mudanças e buscar compreendê-las, para que possamos nos adaptar e aproveitar as oportunidades que surgem.</p>
+
+          </div>
+        </div>
+      
+        <div class="tab-pane fade show" id="exemplo-2" role="tabpanel" aria-labelledby="exemplo-2-tab">
+          <div class="container my-5">
+            <p>Nos tempos atuais, estamos vivenciando grandes mudanças em diversos aspectos da nossa vida. Seja na tecnologia, na economia, na política ou na sociedade como um todo, é inegável que estamos passando por transformações significativas.</p>
+<h2>A importância da tecnologia e das comunicações</h2>
+<p>A história é marcada por transformações que causam um impacto significativo na sociedade. Em um curto período de tempo, tudo muda e as pessoas nem conseguem imaginar como seus antepassados viviam. A tecnologia e as comunicações são os principais impulsionadores dessas mudanças, criando novos paradigmas e definindo novas formas de fazer negócios e liderar pessoas.</p>
+<h2>A era da tecnologia da informação e da comunicação</h2>
+<p>Vivemos em uma era de grandes mudanças, onde a tecnologia da informação e da comunicação integra a maior parte da sociedade economicamente relevante, revolucionando a forma como trabalhamos e nos relacionamos.</p>
+<h2>A transformação na gestão de pessoas</h2>
+<p>Essas mudanças constantes exigem que os indivíduos sejam flexíveis, adaptáveis e otimistas. A transformação mais significativa está na gestão de pessoas, onde o conhecimento se tornou tão importante quanto o capital financeiro. O surgimento de novas empresas e a ascensão da &quot;sociedade do conhecimento&quot; permitiram que os trabalhadores se tornassem donos dos meios de produção e do produto do seu trabalho. Eles têm a liberdade de fazer seus próprios horários, controlar sua produção e cuidar do seu autodesenvolvimento.</p>
+<h2>O impacto dos avanços tecnológicos na economia e na sociedade</h2>
+<p>Os avanços tecnológicos também têm um impacto significativo na economia e na sociedade. Por exemplo, a pílula anticoncepcional permitiu que as mulheres planejassem e controlassem suas vidas, o que resultou em uma maior participação no mercado de trabalho. Essa mudança na estrutura familiar levou ao surgimento de novos produtos e serviços, como lanchonetes fast food e comidas congeladas. Esses produtos são soluções para os problemas criados pela entrada das mulheres no mercado de trabalho.</p>
+<h2>Os desafios dos novos profissionais</h2>
+<p>Diante dessas mudanças, os novos profissionais enfrentam o desafio de ajudar a criar o novo e mobilizar as pessoas para implementar as mudanças necessárias. Para ter sucesso nesse ambiente em constante transformação, é essencial que os profissionais se conheçam bem e também conheçam os outros. O autoconhecimento permite que eles entendam como agem e reagem, o que sabem, do que gostam e o que querem. Além disso, é importante compreender como os outros agem e reagem, o que sabem, do que gostam e o que querem.</p>
+<h2>Estabelecendo prioridades no trabalho</h2>
+<p>Outro aspecto fundamental é estabelecer prioridades no trabalho. Os profissionais devem classificar suas prioridades, como conteúdo do trabalho, qualidade das relações, salário, nível de responsabilidade, promoção, formação, grau de autonomia, ambiente e mobilidade profissional. Essas prioridades podem variar de acordo com cada indivíduo, e é importante entender o motivo por trás de cada escolha.</p>
+<h2>Conclusão</h2>
+<p>Em resumo, vivemos em tempos de grandes mudanças impulsionadas pela tecnologia e pelas comunicações. Essas mudanças afetam tanto a sociedade quanto as organizações, exigindo que os profissionais sejam flexíveis, adaptáveis e otimistas. O autoconhecimento e o conhecimento dos outros são essenciais para enfrentar esses desafios. Além disso, é importante estabelecer prioridades no trabalho e entender o motivo por trás de cada escolha.</p>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

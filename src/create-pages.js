@@ -4,6 +4,7 @@ import ejs from "ejs";
 import fs from "fs";
 import MarkdownIt from "markdown-it";
 import slugify from "slugify";
+import mkatex from "markdown-it-katex";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -14,6 +15,7 @@ const evalsDir = path.resolve(__dirname, "../data/evaluations");
 const promptsDir = path.resolve(__dirname, "../data/prompts");
 
 const mdRenderer = new MarkdownIt();
+mdRenderer.use(mkatex);
 
 function loadEvals() {
   const promptsDirs = fs.readdirSync(evalsDir);

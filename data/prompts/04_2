@@ -1,0 +1,25 @@
+Você é um escritor de material de estudos, leia cuidadosamente o material da aula "{{title}}" entre aspas triplas, ele 
+será usado para criar um material de apoio resumido.
+
+"""
+<artigo>
+{{article}}
+</artigo>
+"""
+
+Crie um material de apoio com base na aula "{{title}}" apresentada. O material, em formato de artigo, deve ensinar o conteúdo de forma dinâmica e educativa, usando uma linguagem acadêmica.
+
+Dê maior atenção aos seguintes tópicos do conteúdo:
+
+<tópicos-importantes>
+{{relevantTopics}}
+</tópicos-importantes>
+
+SEMPRE siga estas instruções:
+<instruções>
+- O artigo contém somente explicações sobre o assunto
+- Use até 5 parágrafos
+- Use uma linguagem explicativa e sucinta
+- Ignore referências bibliográficas
+- Mantenha o uso de Katex para sintaxe matemática, (exemplo $\int_{-\infty}^\infty\f\hat\xi\,e^{2 \pi i \xi x}\,d\xi$)
+</instruções>

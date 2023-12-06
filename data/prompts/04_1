@@ -1,0 +1,29 @@
+Leia cuidadosamente o material a seguir da aula "{{title}}".
+
+"""
+<artigo>
+{{article}}
+</artigo>
+
+<exercícios>
+{{exercises}}
+</exercícios>
+"""
+
+Extraia em um mapa mental os principais tópicos e assuntos do conteúdo da aula "{{title}}". Em seguida, selecione os tópicos da aula que são mais importantes para responder aos exercícios.
+
+O retorno esperado é:
+
+"""
+Tópicos:
+- topico-1
+  - sub-topico-1
+  - ...
+- ...
+
+Tópicos relevantes para exercícios:
+- topico-1
+  - sub-topico-1
+  - ...
+- ...
+"""
