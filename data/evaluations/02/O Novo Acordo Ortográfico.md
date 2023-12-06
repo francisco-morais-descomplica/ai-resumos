@@ -1,0 +1,7 @@
+O novo Acordo Ortográfico da Língua Portuguesa tem como principal objetivo a uniformização da escrita nos países que compartilham o idioma. A iniciativa busca dar maior visibilidade à língua no cenário internacional e facilitar o intercâmbio cultural entre os países lusófonos. Entretanto, é importante ressaltar que o acordo se restringe à língua escrita, não afetando a língua falada.
+
+As principais mudanças do acordo estão relacionadas à incorporação das letras "k", "w" e "y" ao alfabeto, passando a ter 26 letras, e a eliminação de acentos gráficos em ditongos abertos tônicos nas palavras paroxítonas. Além disso, foram alteradas regras de acentuação em algumas palavras paroxítonas e a forma de acentuar hiato com "oo". O acordo também manteve a diferença de acentuação no plural dos verbos "ter" e "vir" e aboliu o uso do trema.
+
+É importante destacar que as mudanças estabelecidas pelo acordo são válidas para a ortografia, não afetando a pronúncia das palavras. O acordo visa simplificar e padronizar a escrita em português, tornando-a mais acessível e facilitando a comunicação escrita entre os países falantes da língua.
+
+No material de apoio, serão apresentados exercícios de fixação, nos quais os alunos deverão aplicar as regras do novo acordo ortográfico para identificar se as palavras estão corretamente escritas ou não. As respostas corretas serão apresentadas ao final dos exercícios, a fim de auxiliar no aprendizado e na fixação das regras ortográficas.

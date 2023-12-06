@@ -1,0 +1,17 @@
+{
+  "name": "eval_framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "markdown-it": "^13.0.2",
+    "openai": "^4.20.1",
+    "slugify": "^1.6.6"
+  },
+  "scripts": {
+    "watch": "tail -f"
+  }
+}

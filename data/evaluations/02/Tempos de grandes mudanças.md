@@ -1,0 +1,15 @@
+Ao longo da história, a sociedade passa por transformações que afetam todos os aspectos da vida das pessoas. Atualmente, vivemos um período de grandes mudanças impulsionadas pela tecnologia, informática, eletrônica e comunicações. Esses avanços têm provocado uma revolução na maneira como vivemos, trabalhamos e nos relacionamos.
+
+Essas transformações têm impactos tanto na sociedade como um todo quanto nas organizações. A tecnologia da informação e comunicação se tornou parte essencial da economia, redefinindo a forma como os negócios são realizados e como as pessoas são lideradas. Essa mudança é resultado do que Marshall McLuhan previu em 1971, quando afirmou que o mundo se tornaria uma aldeia global.
+
+Essas mudanças têm gerado a necessidade de reorganizações e aumento da produtividade. O trabalho e os negócios passaram por grandes transformações, exigindo novas competências e um novo modelo de trabalhador. O conhecimento se tornou um fator fundamental na sociedade do conhecimento, onde a inovação e a informação são tão importantes quanto o capital financeiro.
+
+Nesse novo contexto, os profissionais flexíveis, adaptáveis e otimistas têm mais chances de sucesso. A gestão de pessoas também passa por uma transformação significativa, sendo necessário um novo modelo de liderança que valorize o conhecimento e a autonomia dos trabalhadores.
+
+Diante dessas mudanças, é fundamental que os profissionais se conheçam bem, entendendo suas habilidades, gostos e objetivos. Além disso, é importante conhecer as outras pessoas, suas características e desejos. Essas habilidades podem ser desenvolvidas e aprimoradas ao longo do tempo.
+
+Para auxiliar nesse processo de autoconhecimento, existem diferentes ferramentas disponíveis. Duas delas são a "Áreas de sua vida" e "Prioridades no trabalho". A primeira permite visualizar como o tempo é gasto atualmente e como se gostaria de gastá-lo no futuro. Já a segunda ajuda a classificar as prioridades no trabalho, levando em consideração aspectos como conteúdo do trabalho, qualidade das relações, salário, nível de responsabilidade, entre outros.
+
+Ainda, é importante ressaltar que essas mudanças têm impactos econômicos e sociais. Um exemplo disso é o surgimento da pílula anticoncepcional nos anos 1960, que permitiu que as mulheres ingressassem mais fortemente no mercado de trabalho. Esse fato resultou em novas demandas por produtos e serviços, como lanchonetes fast food e comidas congeladas, que atendessem às necessidades da nova estrutura familiar.
+
+Diante desse cenário de mudança, é fundamental que as organizações se adaptem e que os profissionais estejam preparados para lidar com essas transformações. O sucesso no novo contexto requer a capacidade de criar e mobilizar pessoas para implantar mudanças, além de um constante processo de autoconhecimento e desenvolvimento de habilidades.

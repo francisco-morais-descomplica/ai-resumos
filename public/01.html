@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summaries Eval</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <a class="nav-link" href="01.html">01</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="02.html">02</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="fluid-container">
+    <div class="p-2 mb-2 bg-light">
+      <div class="container-fluid py-5">
+        <h6 class="display-6">Prompt 1</h6>
+        <p class="col-md-8 fs-5">Solicita um artigo com até 3 subtópicos + orientações</p>
+        <details>
+          <summary>Prompt</summary>
+
+          <pre>Leia cuidadosamente o materiais base da aula &#34;{{title}}&#34; a seguir, você deverá criar um artigo baseado nele.
+
+&lt;artigo&gt;
+{{article}}
+&lt;/artigo&gt;
+
+&lt;exercícios&gt;
+{{exercises}}
+&lt;/exercícios&gt;
+
+####
+
+Crie um artigo com até 3 subtópicos com base no material da aula &#34;{{title}}&#34; apresentado. O artigo deve permitir aprender o assunto de uma maneira eficaz e concisa. Use Markdown para formatação. 
+
+SEMPRE atenda às seguintes orientações:
+&lt;orientações&gt;
+- Use uma escrita dinâmica, com estruturas (títulos, subtítulos, listas, etc.) e textos (parágrafos, definições, etc.)
+- Separe sub-assuntos para melhor legibilidade
+- Elabore os assuntos com profundidade acadêmica
+- Evite referenciar o material apresentado como contexto
+- Quando necessário, inclua exemplos extraídos do material apresentado
+- O conteúdo criado deve ser suficiente para responder aos exercícios da aula
+&lt;/orientações&gt;
+
+Vamos começar:
+
+# {{title}}</pre>
+        </details>
+      </div>
+    </div>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="O-Novo-Acordo-Ortografico-tab" data-bs-toggle="tab" data-bs-target="#O-Novo-Acordo-Ortografico" type="button" role="tab" aria-controls="O-Novo-Acordo-Ortografico" aria-selected="true">O-Novo-Acordo-Ortografico</button>
+        </li>
+      
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Tempos-de-grandes-mudancas-tab" data-bs-toggle="tab" data-bs-target="#Tempos-de-grandes-mudancas" type="button" role="tab" aria-controls="Tempos-de-grandes-mudancas" aria-selected="true">Tempos-de-grandes-mudancas</button>
+        </li>
+      
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Teorema-Fundamental-do-Calculo-tab" data-bs-toggle="tab" data-bs-target="#Teorema-Fundamental-do-Calculo" type="button" role="tab" aria-controls="Teorema-Fundamental-do-Calculo" aria-selected="true">Teorema-Fundamental-do-Calculo</button>
+        </li>
+      
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      
+        <div class="tab-pane fade show" id="O-Novo-Acordo-Ortografico" role="tabpanel" aria-labelledby="O-Novo-Acordo-Ortografico-tab">
+          <div class="container my-5">
+            <p>O acordo ortográfico é uma mudança fundamental nas regras de escrita da língua portuguesa. Com o objetivo de promover a uniformização ortográfica entre os países lusófonos, o Novo Acordo Ortográfico foi elaborado e já foi aprovado por diversos países falantes da língua portuguesa, como Brasil, Portugal, Angola, Moçambique, Cabo Verde, Guiné-Bissau, São Tomé e Príncipe e Timor-Leste.</p>
+<h2>Principais mudanças do Acordo</h2>
+<p>Uma das principais mudanças promovidas pelo acordo é a incorporação das letras 'k', 'w' e 'y' ao alfabeto. Anteriormente, essas letras eram consideradas estrangeiras e não faziam parte do alfabeto oficial do português. Com a inclusão dessas letras, o alfabeto passa a ter 26 letras.</p>
+<p>Além disso, o acordo também trouxe mudanças no uso dos acentos. Os ditongos abertos tônicos &quot;éi&quot; e &quot;ói&quot; das palavras paroxítonas não são mais acentuados graficamente. No entanto, continua sendo acentuada a palavra oxítona terminada em &quot;éis&quot;, &quot;éu&quot;, &quot;éus&quot;, &quot;ói&quot; e &quot;óis&quot;.</p>
+<p>Outra mudança importante está na não utilização de acento no &quot;i&quot; e no &quot;u&quot; tônicos quando precedidos de ditongo nas palavras paroxítonas. No entanto, se a palavra for oxítona e o &quot;i&quot; ou o &quot;u&quot; estiverem em posição final (ou seguidos de &quot;s&quot;), o acento permanece.</p>
+<p>Essas são apenas algumas das principais mudanças promovidas pelo Novo Acordo Ortográfico. É importante ressaltar que o acordo se aplica apenas à língua escrita, não afetando a língua falada. Além disso, o acordo não elimina todas as diferenças ortográficas observadas nos países lusófonos, mas é um passo em direção à unificação ortográfica.</p>
+<h2>Exercícios</h2>
+<ol>
+<li>Avalie se as palavras em negrito nas sentenças abaixo: corretas (C) ou erradas (E), segundo as novas regras ortográficas e assinale a alternativa que corresponde à sequência correta:</li>
+</ol>
+<p>A crise financeira dos EUA pode trazer <strong>conseqüências</strong> para o Brasil.
+( ) certo ( ) errado</p>
+<p>Quando ele <strong>para</strong> pensar, desiste.
+( ) certo ( ) errado</p>
+<p>Liv</p>
+
+          </div>
+        </div>
+      
+        <div class="tab-pane fade show" id="Tempos-de-grandes-mudancas" role="tabpanel" aria-labelledby="Tempos-de-grandes-mudancas-tab">
+          <div class="container my-5">
+            <p>Ao longo da história, a sociedade passou por diversas transformações que impactaram profundamente a forma como vivemos. No entanto, nos tempos atuais, essas mudanças têm sido ainda mais intensas e rápidas, especialmente devido aos avanços tecnológicos e à integração global proporcionada pela tecnologia da informação e comunicação. Nesse contexto, as organizações também são afetadas e precisam se adaptar a novos paradigmas.</p>
+<h2>A revolução tecnológica e suas consequências</h2>
+<p>A tecnologia da informação e comunicação é o principal gatilho das transformações que observamos no mundo atual. Através dessas inovações, as pessoas podem se comunicar instantaneamente com qualquer parte do mundo, acessar uma enorme quantidade de informações e até mesmo controlar e produzir seu próprio trabalho.</p>
+<p>Peter Drucker identificou esse fenômeno como a &quot;sociedade do conhecimento&quot;, onde o conhecimento e a informação se tornaram tão importantes quanto o capital financeiro. Novas empresas, como Microsoft, HP, Cisco, Google e Facebook, foram criadas com pouco dinheiro, mas baseadas na inovação e na capacidade de transformar conhecimento em valor.</p>
+<p>Dessa forma, a gestão de pessoas também se transformou significativamente. Os trabalhadores do conhecimento agora são proprietários dos meios de produção e do resultado de seu trabalho. Eles têm controle sobre sua própria produção, autonomia para estabelecer suas prioridades e não precisam estar subordinados a um supervisor que fiscalize sua jornada de trabalho.</p>
+<h2>Novas formas de trabalho e carreira</h2>
+<p>Essa revolução tecnológica e a valorização do conhecimento também estão mudando a forma como as pessoas trabalham e constroem suas carreiras. A necessidade de adaptar-se às mudanças, reorganizar-se e buscar constantemente ganhos de produtividade cria um ambiente de trabalho onde a flexibilidade, adaptabilidade e otimismo são essenciais para o sucesso.</p>
+<p>Para isso, é fundamental conhecer-se bem, saber quais são suas habilidades, gostos e desejos. Também é importante compreender como as outras pessoas agem e reagem, a fim de colaborar de forma eficiente e construtiva. Essas habilidades podem ser desenvolvidas através de ferramentas de autoconhecimento e do trabalho em equipe.</p>
+<h2>A importância de priorizar</h2>
+<p>No entanto, em meio a tantas mudanças e demandas, é fundamental estabelecer prioridades. No ambiente de trabalho, isso significa identificar quais são os aspectos mais importantes para cada indivíduo. Alguns podem priorizar o conteúdo do trabalho, enquanto outros podem valorizar mais a qualidade das relações ou o grau de autonomia.</p>
+<p>É fundamental compreender essas prioridades pessoais e estabelecer um equilíbrio entre elas. Cada pessoa tem suas próprias aspirações e necessidades, e encontrar um alinhamento entre as prioridades individuais e as necessidades da organização é essencial para a satisfação e sucesso profissional.</p>
+<p>Em resumo, os tempos atuais são marcados por grandes mudanças na sociedade e nas organizações, impulsionadas pela revolução tecnológica e a ascensão da sociedade do conhecimento. Nesse contexto, é fundamental desenvolver habilidades de adaptação, autoconhecimento e priorização para se destacar e aproveitar as oportunidades que surgem nesse novo cenário.</p>
+
+          </div>
+        </div>
+      
+        <div class="tab-pane fade show" id="Teorema-Fundamental-do-Calculo" role="tabpanel" aria-labelledby="Teorema-Fundamental-do-Calculo-tab">
+          <div class="container my-5">
+            <p>O Teorema Fundamental do Cálculo é um dos conceitos fundamentais do cálculo e estabelece uma relação importante entre a integração de uma função e a sua derivada. Esse teorema é essencial para o desenvolvimento de várias técnicas de integração e permite o cálculo de integrais definidas de forma mais simples e eficiente.</p>
+<h2>Definição do Teorema Fundamental do Cálculo</h2>
+<p>O Teorema Fundamental do Cálculo estabelece que se uma função f(x) é contínua em um intervalo fechado [a, b] e F(x) é uma antiderivada de f(x) nesse intervalo, então a integral definida de f(x) de a até b é igual à diferença das antiderivadas de f(x) em a e b:</p>
+<p>∫ab f(x) dx = F(b) - F(a)</p>
+<p>Essa definição mostra uma relação direta entre a integral definida e a antiderivada da função integranda. Ou seja, o Teorema Fundamental do Cálculo permite calcular a integral definida de uma função ao encontrarmos sua antiderivada e avaliarmos essa antiderivada nos limites da integração.</p>
+<h2>Aplicação do Teorema Fundamental do Cálculo</h2>
+<p>A partir da definição do Teorema Fundamental do Cálculo, podemos aplicá-lo para resolver diversos problemas de cálculo. Para isso, precisamos encontrar a antiderivada da função que estamos integrando e, em seguida, avaliar essa antiderivada nos limites de integração.</p>
+<p>Por exemplo, vamos calcular a seguinte integral definida:</p>
+<p>∫24 x dx</p>
+<p>A função integranda é f(x) = x e, ao aplicarmos o Teorema Fundamental do Cálculo, encontramos a antiderivada F(x) = x²/2. Substituindo os limites de integração na fórmula do teorema, temos:</p>
+<p>∫24 x dx = F(4) - F(2) = (4²/2) - (2²/2) = 16/2 - 4/2 = 8 - 2 = 6</p>
+<p>Portanto, a integral definida de 2 até 4 da função f(x) = x é igual a 6.</p>
+<h2>Limitações do Teorema Fundamental do Cálculo</h2>
+<p>É importante destacar que o Teorema Fundamental do Cálculo só é aplicável quando a função integranda é contínua no intervalo de integração. Caso a função apresente descontinuidades ou singularidades dentro desse intervalo, o teorema não pode ser utilizado.</p>
+<p>Por exemplo, se tivermos a função f(x) = 1/x e quisermos calcular a integral definida de 1 até e, não podemos aplicar diretamente o Teorema Fundamental do Cálculo, pois a função f(x) não é contínua em x = 0. Nesse caso, é necessário utilizar outras técnicas de integração para calcular a integral.</p>
+<h2>Conclusão</h2>
+<p>O Teorema Fundamental do Cálculo é uma ferramenta poderosa para o cálculo de integrais definidas. Com ele, podemos relacionar a integração de uma função com a sua antiderivada, simplificando o processo de cálculo. Porém, é importante estar atento às condições de aplicabilidade desse teorema, especialmente em relação à continuidade da função integranda. Com o Teorema Fundamental do Cálculo em mãos, somos capazes de resolver uma ampla variedade de problemas matemáticos e aplicá-lo em várias áreas da ciência e engenharia.</p>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

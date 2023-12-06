@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summaries Eval</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          
+            <li class="nav-item">
+              <a class="nav-link" href="01.html">01</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="02.html">02</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="fluid-container">
+    <div class="p-2 mb-2 bg-light">
+      <div class="container-fluid py-5">
+        <h6 class="display-6">Prompt 2</h6>
+        <p class="col-md-8 fs-5">Não solicita formatação com Markdown</p>
+        <details>
+          <summary>Prompt</summary>
+
+          <pre>Você é um escritor de material de estudos, leia cuidadosamente o material da aula &#34;{{title}}&#34; entre aspas triplas, ele
+será usado para criar um novo conteúdo.
+
+&#34;&#34;&#34;
+&lt;artigo&gt;
+{{article}}
+&lt;/artigo&gt;
+
+&lt;exercícios&gt;
+{{exercises}}
+&lt;/exercícios&gt;
+&#34;&#34;&#34;
+
+Crie um material de apoio com base na aula &#34;{{title}}&#34; apresentada. O material, em formato de artigo, deve ensinar as 
+informações mais relevantes para responder os exercícios da aula, usando uma linguagem acadêmica. Use Markdown para
+formatações do texto.
+
+SEMPRE siga estas instruções:
+&lt;instruções&gt;
+- O artigo contém somente explicações sobre o assunto
+- Use até 5 parágrafos
+- Use uma linguagem explicativa e sucinta
+- Ignore referências bibliográficas
+&lt;/instruções&gt;
+
+Vamos começar:
+
+# {{title}}</pre>
+        </details>
+      </div>
+    </div>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="O-Novo-Acordo-Ortografico-tab" data-bs-toggle="tab" data-bs-target="#O-Novo-Acordo-Ortografico" type="button" role="tab" aria-controls="O-Novo-Acordo-Ortografico" aria-selected="true">O-Novo-Acordo-Ortografico</button>
+        </li>
+      
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Tempos-de-grandes-mudancas-tab" data-bs-toggle="tab" data-bs-target="#Tempos-de-grandes-mudancas" type="button" role="tab" aria-controls="Tempos-de-grandes-mudancas" aria-selected="true">Tempos-de-grandes-mudancas</button>
+        </li>
+      
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="Teorema-Fundamental-do-Calculo-tab" data-bs-toggle="tab" data-bs-target="#Teorema-Fundamental-do-Calculo" type="button" role="tab" aria-controls="Teorema-Fundamental-do-Calculo" aria-selected="true">Teorema-Fundamental-do-Calculo</button>
+        </li>
+      
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      
+        <div class="tab-pane fade show" id="O-Novo-Acordo-Ortografico" role="tabpanel" aria-labelledby="O-Novo-Acordo-Ortografico-tab">
+          <div class="container my-5">
+            <p>O novo Acordo Ortográfico da Língua Portuguesa tem como principal objetivo a uniformização da escrita nos países que compartilham o idioma. A iniciativa busca dar maior visibilidade à língua no cenário internacional e facilitar o intercâmbio cultural entre os países lusófonos. Entretanto, é importante ressaltar que o acordo se restringe à língua escrita, não afetando a língua falada.</p>
+<p>As principais mudanças do acordo estão relacionadas à incorporação das letras &quot;k&quot;, &quot;w&quot; e &quot;y&quot; ao alfabeto, passando a ter 26 letras, e a eliminação de acentos gráficos em ditongos abertos tônicos nas palavras paroxítonas. Além disso, foram alteradas regras de acentuação em algumas palavras paroxítonas e a forma de acentuar hiato com &quot;oo&quot;. O acordo também manteve a diferença de acentuação no plural dos verbos &quot;ter&quot; e &quot;vir&quot; e aboliu o uso do trema.</p>
+<p>É importante destacar que as mudanças estabelecidas pelo acordo são válidas para a ortografia, não afetando a pronúncia das palavras. O acordo visa simplificar e padronizar a escrita em português, tornando-a mais acessível e facilitando a comunicação escrita entre os países falantes da língua.</p>
+<p>No material de apoio, serão apresentados exercícios de fixação, nos quais os alunos deverão aplicar as regras do novo acordo ortográfico para identificar se as palavras estão corretamente escritas ou não. As respostas corretas serão apresentadas ao final dos exercícios, a fim de auxiliar no aprendizado e na fixação das regras ortográficas.</p>
+
+          </div>
+        </div>
+      
+        <div class="tab-pane fade show" id="Tempos-de-grandes-mudancas" role="tabpanel" aria-labelledby="Tempos-de-grandes-mudancas-tab">
+          <div class="container my-5">
+            <p>Ao longo da história, a sociedade passa por transformações que afetam todos os aspectos da vida das pessoas. Atualmente, vivemos um período de grandes mudanças impulsionadas pela tecnologia, informática, eletrônica e comunicações. Esses avanços têm provocado uma revolução na maneira como vivemos, trabalhamos e nos relacionamos.</p>
+<p>Essas transformações têm impactos tanto na sociedade como um todo quanto nas organizações. A tecnologia da informação e comunicação se tornou parte essencial da economia, redefinindo a forma como os negócios são realizados e como as pessoas são lideradas. Essa mudança é resultado do que Marshall McLuhan previu em 1971, quando afirmou que o mundo se tornaria uma aldeia global.</p>
+<p>Essas mudanças têm gerado a necessidade de reorganizações e aumento da produtividade. O trabalho e os negócios passaram por grandes transformações, exigindo novas competências e um novo modelo de trabalhador. O conhecimento se tornou um fator fundamental na sociedade do conhecimento, onde a inovação e a informação são tão importantes quanto o capital financeiro.</p>
+<p>Nesse novo contexto, os profissionais flexíveis, adaptáveis e otimistas têm mais chances de sucesso. A gestão de pessoas também passa por uma transformação significativa, sendo necessário um novo modelo de liderança que valorize o conhecimento e a autonomia dos trabalhadores.</p>
+<p>Diante dessas mudanças, é fundamental que os profissionais se conheçam bem, entendendo suas habilidades, gostos e objetivos. Além disso, é importante conhecer as outras pessoas, suas características e desejos. Essas habilidades podem ser desenvolvidas e aprimoradas ao longo do tempo.</p>
+<p>Para auxiliar nesse processo de autoconhecimento, existem diferentes ferramentas disponíveis. Duas delas são a &quot;Áreas de sua vida&quot; e &quot;Prioridades no trabalho&quot;. A primeira permite visualizar como o tempo é gasto atualmente e como se gostaria de gastá-lo no futuro. Já a segunda ajuda a classificar as prioridades no trabalho, levando em consideração aspectos como conteúdo do trabalho, qualidade das relações, salário, nível de responsabilidade, entre outros.</p>
+<p>Ainda, é importante ressaltar que essas mudanças têm impactos econômicos e sociais. Um exemplo disso é o surgimento da pílula anticoncepcional nos anos 1960, que permitiu que as mulheres ingressassem mais fortemente no mercado de trabalho. Esse fato resultou em novas demandas por produtos e serviços, como lanchonetes fast food e comidas congeladas, que atendessem às necessidades da nova estrutura familiar.</p>
+<p>Diante desse cenário de mudança, é fundamental que as organizações se adaptem e que os profissionais estejam preparados para lidar com essas transformações. O sucesso no novo contexto requer a capacidade de criar e mobilizar pessoas para implantar mudanças, além de um constante processo de autoconhecimento e desenvolvimento de habilidades.</p>
+
+          </div>
+        </div>
+      
+        <div class="tab-pane fade show" id="Teorema-Fundamental-do-Calculo" role="tabpanel" aria-labelledby="Teorema-Fundamental-do-Calculo-tab">
+          <div class="container my-5">
+            <p>O Teorema Fundamental do Cálculo (TFC) é um dos principais resultados da teoria do cálculo integral. Ele estabelece uma relação entre a função primitiva (ou antiderivada) de uma função contínua e a sua integral.</p>
+<p>De acordo com o TFC, se uma função f é contínua em um intervalo [a, b], então a função F(x) definida como a integral definida de f de a até x é contínua em [a, b] e diferenciável em (a, b). Além disso, a derivada de F(x) é igual a f(x) para todo x no intervalo (a, b). Simplificando, podemos dizer que F é uma antiderivada de f.</p>
+<p>A principal aplicação do TFC é a possibilidade de calcular integrais definidas. Dada uma função f contínua em um intervalo [a, b], podemos calcular a integral definida de f de a até b utilizando qualquer antiderivada de f. O teorema garante que o valor da integral é igual à diferença entre os valores da antiderivada nos pontos b e a.</p>
+<p>No entanto, é importante ressaltar algumas condições para aplicar o TFC. O intervalo [a, b] deve ser contínuo, ou seja, não pode conter pontos de descontinuidade. Caso contrário, a integral definida não será bem definida. Por exemplo, se a função f possui uma descontinuidade no intervalo [a, b], não podemos aplicar o TFC nesse intervalo.</p>
+<p>No material original da aula, são apresentados alguns exemplos de aplicação do TFC na resolução de integrais definidas. Cada exemplo mostra a função f a ser integrada, os limites de integração e o cálculo da integral utilizando o TFC. Esses exemplos são muito úteis para compreender como utilizar o teorema na prática.</p>
+<p>Através do TFC, torna-se possível resolver problemas de cálculo integral e calcular áreas sob curvas, entre outras aplicações. É um teorema fundamental para a compreensão e aplicação do cálculo integral, sendo uma ferramenta essencial para estudantes e profissionais das áreas de matemática, física, engenharia e outras ciências exatas.</p>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

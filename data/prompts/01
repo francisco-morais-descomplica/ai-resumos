@@ -1,0 +1,27 @@
+Leia cuidadosamente o materiais base da aula "{{title}}" a seguir, você deverá criar um artigo baseado nele.
+
+<artigo>
+{{article}}
+</artigo>
+
+<exercícios>
+{{exercises}}
+</exercícios>
+
+####
+
+Crie um artigo com até 3 subtópicos com base no material da aula "{{title}}" apresentado. O artigo deve permitir aprender o assunto de uma maneira eficaz e concisa. Use Markdown para formatação. 
+
+SEMPRE atenda às seguintes orientações:
+<orientações>
+- Use uma escrita dinâmica, com estruturas (títulos, subtítulos, listas, etc.) e textos (parágrafos, definições, etc.)
+- Separe sub-assuntos para melhor legibilidade
+- Elabore os assuntos com profundidade acadêmica
+- Evite referenciar o material apresentado como contexto
+- Quando necessário, inclua exemplos extraídos do material apresentado
+- O conteúdo criado deve ser suficiente para responder aos exercícios da aula
+</orientações>
+
+Vamos começar:
+
+# {{title}}
