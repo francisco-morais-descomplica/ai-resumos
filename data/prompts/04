@@ -1,5 +1,4 @@
 === PROMPT 1 ===
-
 Leia cuidadosamente o material a seguir da aula "{{title}}".
 
 """
@@ -31,7 +30,6 @@ Tópicos relevantes para exercícios:
 """
 
 === PROMPT 2 ===
-
 Você é um escritor de material de estudos, leia cuidadosamente o material da aula "{{title}}" entre aspas triplas, ele 
 será usado para criar um material de apoio resumido.
 
@@ -55,15 +53,14 @@ SEMPRE siga estas instruções:
 - Use até 5 parágrafos
 - Use uma linguagem explicativa e sucinta
 - Ignore referências bibliográficas
+- Mantenha o uso de Katex para sintaxe matemática, (exemplo $\int_{-\infty}^\infty\f\hat\xi\,e^{2 \pi i \xi x}\,d\xi$)
 </instruções>
 
 === PROMPT 3 ===
 
 Re-organize o texto a seguir em format Markdown, enfatizando termos relevantes (ex: **termo**), criando tópicos (##), sub-tópicos (###), bullet points e incorporando sintaxe matemática usando Katex quando necessário. O texto criado deve ser bem estruturado e visualmente apelativo, em representação Markdown.
 
-Um exemplo de fómula em Katex é \f\relax{x} = \int_{-\infty}^\infty
-    \f\hat\xi\,e^{2 \pi i \xi x}
-    \,d\xi
+Mantenha o uso de Katex para sintaxe matemática, (exemplo $\int_{-\infty}^\infty\f\hat\xi\,e^{2 \pi i \xi x}\,d\xi$)
 
 """
 <artigo>
